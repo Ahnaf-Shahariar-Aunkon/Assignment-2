@@ -1,0 +1,244 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gulzar&family=Poppins:ital,wght@0,500;1,400&family=Source+Serif+Pro&display=swap');
+
+body {
+    font-family: 'Source Serif Pro', serif;
+}
+
+/* Style of the banner part */
+.container {
+    background: #161616;
+    position: absolute;
+    width: 80%;
+    height: 380px;
+    left: 90px;
+    top: 25px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.container:hover {
+    color: lightgreen;
+}
+
+/* Style of the left part of the banner */
+.banner-L {
+    position: absolute;
+    width: 40%;
+    height: 424px;
+    left: 46px;
+    top: 61px;
+    color: aliceblue;
+}
+
+/* Style for button */
+.but {
+    position: absolute;
+    width: 127px;
+    height: 36px;
+    left: 10px;
+    top: 220px;
+    background: #DD0000;
+    border-radius: 5px;
+    color: aliceblue;
+
+}
+
+
+/* Style of the Right part of the banner */
+.banner-R {
+    position: absolute;
+    width: 40%;
+    height: 613px;
+    left: 380px;
+    top: 40px;
+    right: 46px;
+    background: url(kisspng-marcelo-vieira-brazil-national-football-team-footb-brazil-5ac0e6b8ef0ed6.png);
+}
+
+.main-section {
+    width: 80%;
+    margin-left: 90px;
+    margin-top: 450px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-section-L {
+    margin-top: 30px;
+    height: 235px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main-section-R {
+    margin-top: 30px;
+    height: 900px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2px;
+    row-gap: 10px;
+    padding: 10px 10px;
+
+}
+
+.pages {
+    background: #FFFFFF;
+    border-radius: 5px;
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#selected {
+    background-color: #DD0000;
+    color: aliceblue;
+}
+
+.item {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: lightgrey;
+    margin-left: 5px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.transfer-top {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.transfer-middle {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.transfer-foot {
+    padding-left: 3px;
+    padding-right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #161616;
+    color: aliceblue;
+    height: 250px;
+    width: 100%;
+    padding-top: 70px;
+}
+
+hr {
+    border-top: 1px solid aliceblue;
+    width: 60%;
+    margin-left: 170px;
+}
+
+.footer-top {
+    text-align: center;
+}
+
+.footer-foot {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-section_of_fixture-R {
+    margin-top: 30px;
+    height: 300px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2px;
+    row-gap: 10px;
+    padding: 10px 10px;
+}
+
+#fix-selected {
+    background-color: #DD0000;
+    color: aliceblue;
+}
+
+.fixture-item {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: lightgrey;
+    margin-left: 5px;
+}
+
+.fixture-top {
+    padding: 4px 3px;
+    display: flex;
+
+}
+
+.fixture-mid {
+    text-align: center;
+}
+
+.fixture-foot {
+    color: gray;
+    text-align: center;
+}
+
+.fix-foot {
+    margin-top: -600px;
+}
+
+/*--------------
+ Media Queries 
+ --------------*/
+
+
+/* For Mobile */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 650px;
+        height: 880px;
+        left: 15px;
+        right: 15px;
+        top: 45px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-R {
+
+        width: 40%;
+        height: 613px;
+        left: 300px;
+        top: 40px;
+        right: 46px;
+        background: url(kisspng-marcelo-vieira-brazil-national-football-team-footb-brazil-5ac0e6b8ef0ed6.png);
+    }
+
+    .but {
+        width: 127px;
+        height: 36px;
+        left: 10px;
+        top: 220px;
+        background: #DD0000;
+        border-radius: 5px;
+        color: aliceblue;
+
+    }
+}
